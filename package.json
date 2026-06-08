@@ -1,0 +1,31 @@
+{
+  "name": "claude-context-engineer",
+  "version": "1.0.0",
+  "description": "Automatic, silent context-engineering hooks for Claude Code — capture decisions, learnings and changed files to project memory before context is lost.",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "context-engineer-doctor": "bin/doctor.js"
+  },
+  "scripts": {
+    "install-hooks": "./install.sh",
+    "uninstall-hooks": "./uninstall.sh",
+    "doctor": "node bin/doctor.js"
+  },
+  "files": [
+    "scripts/",
+    "bin/",
+    "install.sh",
+    "uninstall.sh",
+    "README.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "hooks",
+    "memory",
+    "context-engineering"
+  ]
+}

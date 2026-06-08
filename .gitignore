@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.DS_Store
+# never commit a captured settings backup if one lands here
+settings.json.bak.*

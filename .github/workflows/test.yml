@@ -28,4 +28,5 @@ jobs:
           find scripts/ -name "*.js" -exec node --check {} \; -exec echo "{}: syntax OK" \;
 
       - name: Validate package.json
-        run: node -e "JSON.parse(require('fs').readFileSync('package.json','utf8'))" && echo "package.json: valid JSON"
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('package.json','utf8'))" && echo "package.json OK"
